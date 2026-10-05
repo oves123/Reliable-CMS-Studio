@@ -52,7 +52,7 @@ export const homePage = defineType({
       title: 'Mission Description',
       type: 'text',
       description: 'e.g. Belief in the capabilities of our people to rapidly transfer ideas to reality...',
-    })
+    }),
     defineField({
       name: 'stats',
       title: 'Company Stats',
