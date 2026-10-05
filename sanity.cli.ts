@@ -5,6 +5,7 @@ export default defineCliConfig({
     projectId: 'pclntznm',
     dataset: 'production'
   },
+  studioHost: 'reliable-cms',
   deployment: {
     /**
      * Enable auto-updates for studios.
