@@ -53,5 +53,44 @@ export const homePage = defineType({
       type: 'text',
       description: 'e.g. Belief in the capabilities of our people to rapidly transfer ideas to reality...',
     })
+    defineField({
+      name: 'stats',
+      title: 'Company Stats',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: 'number', type: 'number', title: 'Number' },
+            { name: 'suffix', type: 'string', title: 'Suffix (e.g., +, %)' },
+            { name: 'label', type: 'string', title: 'Label' }
+          ]
+        }
+      ]
+    }),
+    defineField({
+      name: 'whyChooseUsTitle',
+      title: 'Why Choose Us Title',
+      type: 'string',
+    }),
+    defineField({
+      name: 'whyChooseUsDescription',
+      title: 'Why Choose Us Description',
+      type: 'text',
+    }),
+    defineField({
+      name: 'features',
+      title: 'Features List',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          fields: [
+            { name: 'title', type: 'string', title: 'Feature Title' },
+            { name: 'description', type: 'text', title: 'Feature Description' }
+          ]
+        }
+      ]
+    })
   ],
 })
